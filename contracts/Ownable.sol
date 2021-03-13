@@ -7,6 +7,26 @@ contract Ownable{
     address public externalQCACAddress;
     address public healthDepartmentAddress;
     
+    modifier isPharmaceuticalCompany(address _pharmaceuticalCompanyAddress){
+        require(pharmaceuticalCompanyAddress==_pharmaceuticalCompanyAddress);
+        _;
+    }
+
+     modifier isInternalQCQAAddress(address _internalQCQAAddress){
+        require(internalQCQAAddress==_internalQCQAAddress);
+        _;
+    }
+
+     modifier isExternalQCACAddress(address _externalQCACAddress){
+        require(externalQCACAddress==_externalQCACAddress);
+        _;
+    }
+
+     modifier isHealthDepartmentAddress(address _healthDepartmentAddress){
+        require(healthDepartmentAddress==_healthDepartmentAddress);
+        _;
+    }
+
     function setPharmaceuticalCompany(address _pharmaceuticalCompanyAddress) public{
         pharmaceuticalCompanyAddress = _pharmaceuticalCompanyAddress;
     }
