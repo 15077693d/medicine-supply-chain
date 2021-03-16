@@ -16,6 +16,7 @@ const TableContainer = styled.div`
         justify-content:center;
         align-items:center;
     }
+    overflow:hidden;
 `
 
 const TableWrapper = styled.div`

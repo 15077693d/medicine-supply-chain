@@ -15,10 +15,17 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
 
 const SupplyChainFactory = new web3.eth.Contract(
   SupplyChainFactoryJson.abi,
-  "0xCA77e6b4fBB6a6fee2CC8842D9f5c02B90bdE784"
+  "0x0bb7aE641E7979e27e13CDD7A732eDdd0f937Fa0"
 )
 
-SupplyChainFactory.methods.count().call().then(
-  result => console.log(result)
+const SupplyChain = () => new web3.eth.Contract(
+  SupplyChainFactoryJson.abi,
+  "0x0bb7aE641E7979e27e13CDD7A732eDdd0f937Fa0"
 )
-export {web3, SupplyChainFactory};
+
+const getAccount = async () => {
+  const accounts = await web3.eth.getAccounts()
+  return accounts[0]
+}
+
+export {web3, SupplyChainFactory, getAccount};

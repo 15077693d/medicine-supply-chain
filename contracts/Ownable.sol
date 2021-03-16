@@ -2,9 +2,9 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract Ownable{
-    address public pharmaceuticalCompanyAddress;
-    address public internalQCQAAddress;
     address public externalQCACAddress;
+    address public internalQCQAAddress;
+    address public pharmaceuticalCompanyAddress;
     address public healthDepartmentAddress;
     
     modifier isPharmaceuticalCompany(address _pharmaceuticalCompanyAddress){

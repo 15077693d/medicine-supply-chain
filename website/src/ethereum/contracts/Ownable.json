@@ -106,15 +106,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"externalQCACAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"healthDepartmentAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"internalQCQAAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pharmaceuticalCompanyAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_externalQCACAddress\",\"type\":\"address\"}],\"name\":\"setExternalQCQA\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_healthDepartmentAddress\",\"type\":\"address\"}],\"name\":\"setHealthDepartment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_internalQCQAAddress\",\"type\":\"address\"}],\"name\":\"setInternalQCQA\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_pharmaceuticalCompanyAddress\",\"type\":\"address\"}],\"name\":\"setPharmaceuticalCompany\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/yiulapsang/Desktop/workspace/blockchain/medicine-supply-chain/contracts/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/yiulapsang/Desktop/workspace/blockchain/medicine-supply-chain/contracts/Ownable.sol\":{\"keccak256\":\"0xb228c9697808094ae8a9902ea0d05bbb59ec8cf3b1d168a5e6a777eda5f3a81c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://08156b8fa8aa8daa9d23753824b43c3a4bc890c127197721510ff0b3e03aa7be\",\"dweb:/ipfs/QmPDNx66ngi8VPfkoqN4QcGyxdY7UyGwJpqND7HLWaXdS4\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610447806100206000396000f3fe608060405234801561001057600080fd5b50600436106100875760003560e01c8063b9172c7a1161005b578063b9172c7a1461017c578063c49c8aaa146101b0578063e25de2ab146101e4578063e3cf144e1461022857610087565b806258b5e41461008c5780634ba057cd146100d0578063697bc1f314610104578063802dba9f14610148575b600080fd5b6100ce600480360360208110156100a257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061026c565b005b6100d86102b0565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102d4565b005b610150610318565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61018461033e565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101b8610364565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610226600480360360208110156101fa57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061038a565b005b61026a6004803603602081101561023e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103ce565b005b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b80600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea264697066735822122027a413f61fa7181427f0b453f1c885b6d2a277fe0f4985c130e00cd8f536468d64736f6c63430007060033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100875760003560e01c8063b9172c7a1161005b578063b9172c7a1461017c578063c49c8aaa146101b0578063e25de2ab146101e4578063e3cf144e1461022857610087565b806258b5e41461008c5780634ba057cd146100d0578063697bc1f314610104578063802dba9f14610148575b600080fd5b6100ce600480360360208110156100a257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061026c565b005b6100d86102b0565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102d4565b005b610150610318565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61018461033e565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101b8610364565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610226600480360360208110156101fa57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061038a565b005b61026a6004803603602081101561023e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103ce565b005b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b80600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea264697066735822122027a413f61fa7181427f0b453f1c885b6d2a277fe0f4985c130e00cd8f536468d64736f6c63430007060033",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"externalQCACAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"healthDepartmentAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"internalQCQAAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pharmaceuticalCompanyAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_externalQCACAddress\",\"type\":\"address\"}],\"name\":\"setExternalQCQA\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_healthDepartmentAddress\",\"type\":\"address\"}],\"name\":\"setHealthDepartment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_internalQCQAAddress\",\"type\":\"address\"}],\"name\":\"setInternalQCQA\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_pharmaceuticalCompanyAddress\",\"type\":\"address\"}],\"name\":\"setPharmaceuticalCompany\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/yiulapsang/Desktop/workspace/blockchain/medicine-supply-chain/contracts/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/yiulapsang/Desktop/workspace/blockchain/medicine-supply-chain/contracts/Ownable.sol\":{\"keccak256\":\"0xcaefcc423755982a71ee071372d2f12888f7227052eb888cb7fed57282ead2ae\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d72698f9f3fde5f4a8fc6a782a3e4a4934e4db4a6237d500fed30515858143d1\",\"dweb:/ipfs/QmPhxYq9E4FsebV4qNmovQwcRU4aDJfhSgwqPaGK4np3CC\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610447806100206000396000f3fe608060405234801561001057600080fd5b50600436106100875760003560e01c8063b9172c7a1161005b578063b9172c7a1461017c578063c49c8aaa146101b0578063e25de2ab146101e4578063e3cf144e1461022857610087565b806258b5e41461008c5780634ba057cd146100d0578063697bc1f314610104578063802dba9f14610148575b600080fd5b6100ce600480360360208110156100a257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061026c565b005b6100d86102b0565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102d6565b005b610150610319565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61018461033f565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101b8610365565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610226600480360360208110156101fa57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610389565b005b61026a6004803603602081101561023e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103cd565b005b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b80600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea26469706673582212205b4c6692d670a3fc7d63624c973449da1caa23165b7abd61fc6e910ac6e4b43364736f6c63430007060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100875760003560e01c8063b9172c7a1161005b578063b9172c7a1461017c578063c49c8aaa146101b0578063e25de2ab146101e4578063e3cf144e1461022857610087565b806258b5e41461008c5780634ba057cd146100d0578063697bc1f314610104578063802dba9f14610148575b600080fd5b6100ce600480360360208110156100a257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061026c565b005b6100d86102b0565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101466004803603602081101561011a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506102d6565b005b610150610319565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b61018461033f565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101b8610365565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610226600480360360208110156101fa57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610389565b005b61026a6004803603602081101561023e57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103cd565b005b80600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b80600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b80600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fea26469706673582212205b4c6692d670a3fc7d63624c973449da1caa23165b7abd61fc6e910ac6e4b43364736f6c63430007060033",
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
   "sourceMap": "66:1388:1:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "66:1388:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1056:120;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;88:43;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1186:120;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;217:38;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;137:34;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;177;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1316:136;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;890:156;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1056:120;1149:20;1127:19;;:42;;;;;;;;;;;;;;;;;;1056:120;:::o;88:43::-;;;;;;;;;;;;:::o;1186:120::-;1279:20;1257:19;;:42;;;;;;;;;;;;;;;;;;1186:120;:::o;217:38::-;;;;;;;;;;;;;:::o;137:34::-;;;;;;;;;;;;;:::o;177:::-;;;;;;;;;;;;;:::o;1316:136::-;1421:24;1395:23;;:50;;;;;;;;;;;;;;;;;;1316:136;:::o;890:156::-;1010:29;979:28;;:60;;;;;;;;;;;;;;;;;;890:156;:::o",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Ownable{\n    address public pharmaceuticalCompanyAddress;\n    address public internalQCQAAddress;\n    address public externalQCACAddress;\n    address public healthDepartmentAddress;\n    \n    modifier isPharmaceuticalCompany(address _pharmaceuticalCompanyAddress){\n        require(pharmaceuticalCompanyAddress==_pharmaceuticalCompanyAddress);\n        _;\n    }\n\n     modifier isInternalQCQAAddress(address _internalQCQAAddress){\n        require(internalQCQAAddress==_internalQCQAAddress);\n        _;\n    }\n\n     modifier isExternalQCACAddress(address _externalQCACAddress){\n        require(externalQCACAddress==_externalQCACAddress);\n        _;\n    }\n\n     modifier isHealthDepartmentAddress(address _healthDepartmentAddress){\n        require(healthDepartmentAddress==_healthDepartmentAddress);\n        _;\n    }\n\n    function setPharmaceuticalCompany(address _pharmaceuticalCompanyAddress) public{\n        pharmaceuticalCompanyAddress = _pharmaceuticalCompanyAddress;\n    }\n    \n    function setInternalQCQA(address _internalQCQAAddress) public{\n        internalQCQAAddress = _internalQCQAAddress;\n    }\n    \n    function setExternalQCQA(address _externalQCACAddress) public{\n        externalQCACAddress = _externalQCACAddress;\n    }\n    \n    function setHealthDepartment(address _healthDepartmentAddress) public{\n        healthDepartmentAddress = _healthDepartmentAddress;\n    }\n}",
+  "deployedSourceMap": "66:1388:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1056:120;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;168:43;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1186:120;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;217:38;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;128:34;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;88;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;1316:136;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;890:156;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;1056:120;1149:20;1127:19;;:42;;;;;;;;;;;;;;;;;;1056:120;:::o;168:43::-;;;;;;;;;;;;;:::o;1186:120::-;1279:20;1257:19;;:42;;;;;;;;;;;;;;;;;;1186:120;:::o;217:38::-;;;;;;;;;;;;;:::o;128:34::-;;;;;;;;;;;;;:::o;88:::-;;;;;;;;;;;;:::o;1316:136::-;1421:24;1395:23;;:50;;;;;;;;;;;;;;;;;;1316:136;:::o;890:156::-;1010:29;979:28;;:60;;;;;;;;;;;;;;;;;;890:156;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Ownable{\n    address public externalQCACAddress;\n    address public internalQCQAAddress;\n    address public pharmaceuticalCompanyAddress;\n    address public healthDepartmentAddress;\n    \n    modifier isPharmaceuticalCompany(address _pharmaceuticalCompanyAddress){\n        require(pharmaceuticalCompanyAddress==_pharmaceuticalCompanyAddress);\n        _;\n    }\n\n     modifier isInternalQCQAAddress(address _internalQCQAAddress){\n        require(internalQCQAAddress==_internalQCQAAddress);\n        _;\n    }\n\n     modifier isExternalQCACAddress(address _externalQCACAddress){\n        require(externalQCACAddress==_externalQCACAddress);\n        _;\n    }\n\n     modifier isHealthDepartmentAddress(address _healthDepartmentAddress){\n        require(healthDepartmentAddress==_healthDepartmentAddress);\n        _;\n    }\n\n    function setPharmaceuticalCompany(address _pharmaceuticalCompanyAddress) public{\n        pharmaceuticalCompanyAddress = _pharmaceuticalCompanyAddress;\n    }\n    \n    function setInternalQCQA(address _internalQCQAAddress) public{\n        internalQCQAAddress = _internalQCQAAddress;\n    }\n    \n    function setExternalQCQA(address _externalQCACAddress) public{\n        externalQCACAddress = _externalQCACAddress;\n    }\n    \n    function setHealthDepartment(address _healthDepartmentAddress) public{\n        healthDepartmentAddress = _healthDepartmentAddress;\n    }\n}",
   "sourcePath": "/Users/yiulapsang/Desktop/workspace/blockchain/medicine-supply-chain/contracts/Ownable.sol",
   "ast": {
     "absolutePath": "/Users/yiulapsang/Desktop/workspace/blockchain/medicine-supply-chain/contracts/Ownable.sol",
@@ -156,13 +156,13 @@
         "nodes": [
           {
             "constant": false,
-            "functionSelector": "4ba057cd",
+            "functionSelector": "c49c8aaa",
             "id": 36,
             "mutability": "mutable",
-            "name": "pharmaceuticalCompanyAddress",
+            "name": "externalQCACAddress",
             "nodeType": "VariableDeclaration",
             "scope": 131,
-            "src": "88:43:1",
+            "src": "88:34:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -190,7 +190,7 @@
             "name": "internalQCQAAddress",
             "nodeType": "VariableDeclaration",
             "scope": 131,
-            "src": "137:34:1",
+            "src": "128:34:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -201,7 +201,7 @@
               "id": 37,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "137:7:1",
+              "src": "128:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -212,13 +212,13 @@
           },
           {
             "constant": false,
-            "functionSelector": "c49c8aaa",
+            "functionSelector": "4ba057cd",
             "id": 40,
             "mutability": "mutable",
-            "name": "externalQCACAddress",
+            "name": "pharmaceuticalCompanyAddress",
             "nodeType": "VariableDeclaration",
             "scope": 131,
-            "src": "177:34:1",
+            "src": "168:43:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -229,7 +229,7 @@
               "id": 39,
               "name": "address",
               "nodeType": "ElementaryTypeName",
-              "src": "177:7:1",
+              "src": "168:7:1",
               "stateMutability": "nonpayable",
               "typeDescriptions": {
                 "typeIdentifier": "t_address",
@@ -290,7 +290,7 @@
                           "name": "pharmaceuticalCompanyAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 36,
+                          "referencedDeclaration": 40,
                           "src": "355:28:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -570,7 +570,7 @@
                           "name": "externalQCACAddress",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 40,
+                          "referencedDeclaration": 36,
                           "src": "663:19:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -844,7 +844,7 @@
                       "name": "pharmaceuticalCompanyAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 36,
+                      "referencedDeclaration": 40,
                       "src": "979:28:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1052,7 +1052,7 @@
                       "name": "externalQCACAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 40,
+                      "referencedDeclaration": 36,
                       "src": "1257:19:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1297,9 +1297,9 @@
           {
             "attributes": {
               "constant": false,
-              "functionSelector": "4ba057cd",
+              "functionSelector": "c49c8aaa",
               "mutability": "mutable",
-              "name": "pharmaceuticalCompanyAddress",
+              "name": "externalQCACAddress",
               "scope": 131,
               "stateVariable": true,
               "storageLocation": "default",
@@ -1320,7 +1320,7 @@
             ],
             "id": 36,
             "name": "VariableDeclaration",
-            "src": "88:43:1"
+            "src": "88:34:1"
           },
           {
             "attributes": {
@@ -1343,19 +1343,19 @@
                 },
                 "id": 37,
                 "name": "ElementaryTypeName",
-                "src": "137:7:1"
+                "src": "128:7:1"
               }
             ],
             "id": 38,
             "name": "VariableDeclaration",
-            "src": "137:34:1"
+            "src": "128:34:1"
           },
           {
             "attributes": {
               "constant": false,
-              "functionSelector": "c49c8aaa",
+              "functionSelector": "4ba057cd",
               "mutability": "mutable",
-              "name": "externalQCACAddress",
+              "name": "pharmaceuticalCompanyAddress",
               "scope": 131,
               "stateVariable": true,
               "storageLocation": "default",
@@ -1371,12 +1371,12 @@
                 },
                 "id": 39,
                 "name": "ElementaryTypeName",
-                "src": "177:7:1"
+                "src": "168:7:1"
               }
             ],
             "id": 40,
             "name": "VariableDeclaration",
-            "src": "177:34:1"
+            "src": "168:43:1"
           },
           {
             "attributes": {
@@ -1505,7 +1505,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 36,
+                                  "referencedDeclaration": 40,
                                   "type": "address",
                                   "value": "pharmaceuticalCompanyAddress"
                                 },
@@ -1805,7 +1805,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 40,
+                                  "referencedDeclaration": 36,
                                   "type": "address",
                                   "value": "externalQCACAddress"
                                 },
@@ -2086,7 +2086,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 36,
+                              "referencedDeclaration": 40,
                               "type": "address",
                               "value": "pharmaceuticalCompanyAddress"
                             },
@@ -2328,7 +2328,7 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 40,
+                              "referencedDeclaration": 36,
                               "type": "address",
                               "value": "externalQCACAddress"
                             },
@@ -2506,7 +2506,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-03-15T01:42:22.053Z",
+  "updatedAt": "2021-03-16T14:53:33.879Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

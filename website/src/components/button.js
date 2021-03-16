@@ -31,9 +31,9 @@ const ProgressButton = ({children, status}) => {
     );
 };
 
-const NavButton = ({children, width}) => {
+const NavButton = ({onClick, children, width}) => {
     return (
-        <Button bgColor={theme.color.btn_grey} width={width} height={"77px"}>
+        <Button onClick={onClick} bgColor={theme.color.btn_grey} width={width} height={"77px"}>
             <L1>{children}</L1>
         </Button>
     );
