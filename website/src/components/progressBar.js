@@ -6,14 +6,14 @@ const ProgressBarContainer = styled.div`
     width:100%;
     justify-content:space-around;
 `
-const ProgressBar = ({developedFlag,internalFlag,externalFlag,approvedFlag,purchaseFlag,supplyFlag}) => {
+const ProgressBar = ({developed,internalQCQA,externalQCQA,approved}) => {
     return <ProgressBarContainer>
-        <ProgressButton status={developedFlag}>Developed</ProgressButton>
-        <ProgressButton status={internalFlag}>Internal<br/>QCQA</ProgressButton>
-        <ProgressButton status={externalFlag}>External<br/>QCQA</ProgressButton>
-        <ProgressButton status={approvedFlag}>Approved</ProgressButton>
-        <ProgressButton status={purchaseFlag}>Purchase</ProgressButton>
-        <ProgressButton status={supplyFlag}>Supply</ProgressButton>
+        <ProgressButton status={developed}>Developed</ProgressButton>
+        <ProgressButton status={internalQCQA}>Internal<br/>QCQA</ProgressButton>
+        <ProgressButton status={externalQCQA}>External<br/>QCQA</ProgressButton>
+        <ProgressButton status={approved}>Approved</ProgressButton>
+        <ProgressButton status={approved}>Purchase</ProgressButton>
+        <ProgressButton status={approved}>Supply</ProgressButton>
     </ProgressBarContainer>
 }
 

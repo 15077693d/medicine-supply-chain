@@ -1,11 +1,11 @@
 import React from 'react';
-import {theme, Button, L2, L1} from '../globalStyles'
+import {theme, Button, L3, L2, L1} from '../globalStyles'
 import styled from 'styled-components'
 
-const InfoButton = ({children}) => {
+const InfoButton = ({handleClick,children}) => {
     return (
-        <Button padding={"10px"} width={"fit-content"} height={"fit-content"} bgColor={theme.color.btn_grey} >
-            <L2 >{children}</L2>
+        <Button onClick={handleClick} max_width={"80%"} padding={"10px"} width={"fit-content"} height={"fit-content"} bgColor={theme.color.btn_grey} >
+            <L3 width={"100%"}>{children}</L3>
         </Button>
     );
 };

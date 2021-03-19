@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import logoSrc from '../images/logo.png'
-import { H1 } from '../globalStyles'
-import CreateChain from './createChain'
+import { H1, Blocker } from '../globalStyles'
+import CreateChain from './CreateChain'
+import ShowInfo from './ShowInfo'
 import Nav from '../components/nav'
 import Table from '../components/table'
 import { SwitchButton } from '../components/button'
-
+import {getSupplyChains} from '../ethereum/supplyChainFactory'
 const MainContainer = styled.div`
     display:grid;
     margin:auto;
@@ -35,24 +36,38 @@ const Logo = styled.img`
 `
 const Main = () => {
     const [page, setPage] = useState(false)
+    const [supplyChains, setSupplyChains] =useState(null)
+    const [createdFlag, setCreatedFlag] = useState(false)
+    const [selectInfo, setSelectInfo] = useState(false)
+    useEffect(
+        ()=>{
+            const _getSupplyChains = async () => {
+                setSupplyChains(await getSupplyChains())
+            }
+            _getSupplyChains()
+        },[createdFlag]
+    )
     const backMain = (e) => { if(e.target.id==="blocker"){ setPage(false)}}
     let pageNode;
     switch (page) {
         case "createChain":
-            pageNode = <CreateChain handleClose={backMain}/>
+            pageNode = <CreateChain setCreatedFlag={setCreatedFlag}/>
+            break;
+        case "chainInfo":
+            pageNode = <ShowInfo info={selectInfo}/>
             break;
         default:
             pageNode = null
     }
     return (
         <>
-            {pageNode}
+            {pageNode?<Blocker id="blocker" onClick={backMain}>{pageNode}</Blocker>:null}
             <MainContainer>
                 <Logo src={logoSrc}></Logo>
-                <Nav openCreateChain = {() => setPage("createChain")}></Nav>
+                <Nav openCreate = {() => setPage("createChain")}></Nav>
                 <Title>Medicine Supply Management</Title>
                 <SwitchButton />
-                <Table />
+                <Table openInfo = {(info) => {setSelectInfo(info);setPage("chainInfo");}}  supplyChains={supplyChains}/>
             </MainContainer>
         </>
     );

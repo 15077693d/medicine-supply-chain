@@ -43,6 +43,8 @@ const theme = {
 }
 
 const Button = styled.button`
+    word-wrap: break-word;
+    max-width:${props => props.max_width};
     outline:none;
     border:none;
     padding:${props => props.padding};
@@ -78,6 +80,7 @@ const L2 = styled.div`
     font-size: 16px;
 `
 const L3 = styled.div`
+    width:${props=>props.width};
     color: ${props => props.color};
     font-size: 12px;
 `
@@ -94,9 +97,22 @@ const Input = styled.input`
     outline:none;
     font-size:30px;
     padding-left:${theme.margin.small};
+    padding-right:${theme.margin.small};
     ::placeholder{
         color:${theme.color.btn_blue};
     }
+`
+const Field = styled.div`
+width:${props => props.width};
+overflow:scroll;
+background-color:${theme.color.bar_grey};
+border:none;
+border-bottom: 2px solid ${theme.color.btn_blue};
+color:${theme.color.btn_blue}!important;
+outline:none;
+font-size:30px;
+padding-left:${theme.margin.small};
+padding-right:${theme.margin.small};
 `
 const Blocker = styled.div`
     position: absolute;
@@ -110,4 +126,16 @@ const Blocker = styled.div`
     align-items:center;
     min-width:${props => props.theme.min_width};
 `
-export { GlobalStyles, theme, H1, L1, L2, L3, Button, Title, Blocker ,Input};
+const PopUpContianer = styled.div`
+  text-align:left!important;
+  border-radius:${props=>props.theme.radius.large};
+  background-color:white;
+  height:80vh;
+  width:800px;
+  min-height:400px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:${props=>props.theme.margin.large} 0;
+`
+export { GlobalStyles,PopUpContianer,Field, theme, H1, L1, L2, L3, Button, Title, Blocker ,Input};

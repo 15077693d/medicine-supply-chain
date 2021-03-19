@@ -6,11 +6,11 @@ const NavContainer = styled.div`
     display:flex;
     justify-content:space-between;
 `
-const Nav = ({openCreateChain}) => {
+const Nav = ({openCreate}) => {
     return (
         <NavContainer>
             <NavButton width={"180px"}>Login</NavButton>
-            <NavButton onClick={openCreateChain} width={"83px"}>+</NavButton>
+            <NavButton onClick={openCreate} width={"83px"}>+</NavButton>
         </NavContainer>
     );
 };

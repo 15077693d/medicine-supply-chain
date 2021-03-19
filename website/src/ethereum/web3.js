@@ -1,6 +1,6 @@
 import Web3 from 'web3';
 import SupplyChainFactoryJson from './contracts/SupplyChainFactory.json'
-console.log(SupplyChainFactoryJson)
+import SupplyChainJson from './contracts/SupplyChain.json'
 let web3;
 if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
     // We are in the browser and metamask is running
@@ -15,12 +15,12 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
 
 const SupplyChainFactory = new web3.eth.Contract(
   SupplyChainFactoryJson.abi,
-  "0x0bb7aE641E7979e27e13CDD7A732eDdd0f937Fa0"
+  "0x79010cE1cD629a528Bfb62E80Fcb93F863c312cB"
 )
 
-const SupplyChain = () => new web3.eth.Contract(
-  SupplyChainFactoryJson.abi,
-  "0x0bb7aE641E7979e27e13CDD7A732eDdd0f937Fa0"
+const SupplyChain = (supplyChainAddress) => new web3.eth.Contract(
+  SupplyChainJson.abi,
+  supplyChainAddress
 )
 
 const getAccount = async () => {
@@ -28,4 +28,4 @@ const getAccount = async () => {
   return accounts[0]
 }
 
-export {web3, SupplyChainFactory, getAccount};
+export {web3, SupplyChainFactory,SupplyChain, getAccount};
