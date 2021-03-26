@@ -118,8 +118,8 @@ padding-right:${theme.margin.small};
 `
 const Blocker = styled.div`
     position: absolute;
-    width:100%;
-    height:100%;
+    width:100vw;
+    height:100vh;
     z-index:1;
     background-color:rgb(112,112,112,0.65);
     overflow-y:hidden;
@@ -132,7 +132,7 @@ const PopUpContianer = styled.div`
   text-align:left!important;
   border-radius:${props=>props.theme.radius.large};
   background-color:white;
-  height:80vh;
+  height:50%;
   width:800px;
   min-height:400px;
   display:flex;

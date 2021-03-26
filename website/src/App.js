@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import {GlobalStyles,theme} from './globalStyles';
 import { ThemeProvider } from 'styled-components';
-import Main from './pages/Main'
+import Main from './pages/Main.js'
 function App() {
   return (
     <ThemeProvider theme={theme}>

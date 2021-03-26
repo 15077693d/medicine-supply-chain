@@ -32,7 +32,7 @@ const Supply = ({ supplyChainAddress }) => {
         <PopUpContianer>
             {
                 selectedId === "" ? <div>
-                    <H1>Medicine Supply #{selectedId}</H1>
+                    <H1>Medicine Supply</H1>
                     <BtnContainer>
                         {orders.map(order => <ProgressButton key={order.id} onClick={() => setSelectedId(Number(order.id))} status={order.supplyTime === "0" ? undefined : order.supplied}>{order.id}</ProgressButton>)}
                     </BtnContainer></div> : <Form onSubmit={(e) => { e.preventDefault() }}>
