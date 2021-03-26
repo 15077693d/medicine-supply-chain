@@ -6,7 +6,8 @@ contract AdminRole is Order{
     function provideInformation(string memory information) public isHealthDepartmentAddress(msg.sender){
         medicine.infomation = information;
     }
-    function approveMedicine() public isHealthDepartmentAddress(msg.sender){
-        medicine.approved = true;
+    function approveMedicine(bool isPass, uint256 _approvedTime) public isHealthDepartmentAddress(msg.sender){
+        medicine.approved = isPass;
+        medicine.approvedTime = _approvedTime;
     }
 }

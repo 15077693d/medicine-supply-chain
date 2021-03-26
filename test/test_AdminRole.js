@@ -11,7 +11,7 @@ contract("AdminRole", accounts  => {
     it("approveMedicine can change approved as true", async() => {
         const adminRole = await AdminRole.deployed()
         adminRole.setHealthDepartment(accounts[1])
-        await adminRole.approveMedicine({from:accounts[1]})
+        await adminRole.approveMedicine(true,21412,{from:accounts[1]})
         const actual = await adminRole.medicine.call()
         assert.equal(true, actual.approved)
     })

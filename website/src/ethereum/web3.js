@@ -8,14 +8,15 @@ if (typeof window !== "undefined" && typeof window.web3 !== "undefined") {
 } else {
     // We are on the Server OR the user is not running metamask
     const provider = new Web3.providers.HttpProvider(
-      "http://localhost:8545/"
+      // "http://localhost:8545/"
+      "https://rinkeby.infura.io/v3/e7869a811787478b8953a64ac27bdf51"
     );
     web3 = new Web3(provider,null,null);
 }
 
 const SupplyChainFactory = new web3.eth.Contract(
   SupplyChainFactoryJson.abi,
-  "0x79010cE1cD629a528Bfb62E80Fcb93F863c312cB"
+  "0xbf538aDb16fB277c3484Ba274a2A50abdC1C25D9"
 )
 
 const SupplyChain = (supplyChainAddress) => new web3.eth.Contract(

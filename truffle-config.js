@@ -26,6 +26,7 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 const dotenv = require('dotenv');
 dotenv.config();
+console.log(process.env.MNEMONIC, process.env.INFURA_URL)
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -45,11 +46,11 @@ module.exports = {
     // options below to some value.
     //
     development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 8545,            // Standard Ethereum port (default: none)
-     network_id: "*",       // Any network (default: none)
-     gasPrice: 100000000000,
-     gas: 6721975 // gas limit
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
+      network_id: "*",       // Any network (default: none)
+      gasPrice: 100000000000,
+      gas: 6721975 // gas limit
     },
     // Another network with more advanced options...
     // advanced: {
@@ -63,14 +64,13 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
-    provider: () => new HDWalletProvider(process.env.MNEMONIC, process.env.INFURA_URL),
-    network_id: 4,       // Ropsten's id
-    gas: 5500000,        // Ropsten has a lower block limit than mainnet
-    confirmations: 2,    // # of confs to wait between deployments. (default: 0)
-    timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-    skipDryRun: true,     // Skip dry run before migrations? (default: false for public nets )
-    networkCheckTimeout:50000000,
-    },
+      provider: function () {
+        return new HDWalletProvider(process.env.MNEMONIC, process.env.INFURA_URL);
+      },
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000,
+    }
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),

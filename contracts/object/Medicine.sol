@@ -8,6 +8,7 @@ contract Medicine {
         uint256 price;
         string name;
         string infomation;
+        bool developed;
         uint256 developedTime;
         bool internalQCQA;
         uint256 internalQCQATime;
@@ -21,6 +22,7 @@ contract Medicine {
                 uint256 _price,
                 string memory _name,
                 string memory _infomation,
+                bool _developed,
                 uint256 _developedTime,
                 bool _internalQCQA,
                 uint256 _internalQCQATime,
@@ -33,6 +35,7 @@ contract Medicine {
                         _price,
                         _name,
                         _infomation,
+                        _developed,
                         _developedTime,
                         _internalQCQA,
                         _internalQCQATime,
@@ -41,12 +44,13 @@ contract Medicine {
                         _approved,
                         _approvedTime);
     }
-    function getMedicine() public view returns(uint256,uint256,string memory,string memory,uint256,bool,uint256,bool,uint256,bool,uint256){
+    function getMedicine() public view returns(uint256,uint256,string memory,string memory,bool, uint256,bool,uint256,bool,uint256,bool,uint256){
         return (
             medicine.id,
             medicine.price,
             medicine.name,
             medicine.infomation,
+            medicine.developed,
             medicine.developedTime,
             medicine.internalQCQA,
             medicine.internalQCQATime,

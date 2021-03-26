@@ -3,7 +3,7 @@ contract("Medicine", accounts => {
     it("setMedicine can set medicine",async () => {
         const medicine = await Medicine.deployed()
         await medicine.setMedicine(0,
-            0,"test","test",0,true,0,true,0,true,0
+            0,"test","test",true,0,true,0,true,0,true,0
         )
         expect = "test"
         actual = await medicine.medicine.call()
@@ -13,7 +13,7 @@ contract("Medicine", accounts => {
     it("getMedicine can get medicine",async () => {
         const medicine = await Medicine.deployed()
         await medicine.setMedicine(0,
-            0,"test","test",0,true,0,true,0,true,0
+            0,"test","test",true,0,true,0,true,0,true,0
         )
         expect = "test"
         actual = await medicine.getMedicine()

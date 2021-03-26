@@ -9,10 +9,11 @@ contract RetailerRole is Order {
         medicine.price = _price;
         medicine.name = _name;
         medicine.developedTime = _developedTime;
+        medicine.developed = true;
     }
     
-    function supplyMedicine(uint256 _orderId, uint256 _supplyTime)  public isPharmaceuticalCompany(msg.sender){
-        Orders[_orderId].supplied = true;
+    function supplyMedicine(uint256 _orderId, uint256 _supplyTime, bool _supplied)  public isPharmaceuticalCompany(msg.sender){
+        Orders[_orderId].supplied = _supplied;
         Orders[_orderId].supplyTime = _supplyTime;
     }
 } 

@@ -6,14 +6,14 @@ const ProgressBarContainer = styled.div`
     width:100%;
     justify-content:space-around;
 `
-const ProgressBar = ({developed,internalQCQA,externalQCQA,approved}) => {
+const ProgressBar = ({setPage,developed,internalQCQA,externalQCQA,approved}) => {
     return <ProgressBarContainer>
-        <ProgressButton status={developed}>Developed</ProgressButton>
-        <ProgressButton status={internalQCQA}>Internal<br/>QCQA</ProgressButton>
-        <ProgressButton status={externalQCQA}>External<br/>QCQA</ProgressButton>
-        <ProgressButton status={approved}>Approved</ProgressButton>
-        <ProgressButton status={approved}>Purchase</ProgressButton>
-        <ProgressButton status={approved}>Supply</ProgressButton>
+        <ProgressButton onClick={() =>setPage("developed")}  status={developed}>Developed</ProgressButton>
+        <ProgressButton onClick={() =>setPage("internalQCQA")} status={internalQCQA}>Internal<br/>QCQA</ProgressButton>
+        <ProgressButton onClick={() =>setPage("externalQCQA")} status={externalQCQA}>External<br/>QCQA</ProgressButton>
+        <ProgressButton onClick={() =>setPage("approved")} status={approved}>Approved</ProgressButton>
+        <ProgressButton onClick={() =>setPage("purchase")} status={approved}>Purchase</ProgressButton>
+        <ProgressButton onClick={() =>setPage("supply")} status={approved}>Supply</ProgressButton>
     </ProgressBarContainer>
 }
 

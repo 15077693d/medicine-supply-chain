@@ -3,11 +3,18 @@ import styled from 'styled-components';
 import logoSrc from '../images/logo.png'
 import { H1, Blocker } from '../globalStyles'
 import CreateChain from './CreateChain'
+import DevelopedMedicine from './DevelopedMedicine'
 import ShowInfo from './ShowInfo'
 import Nav from '../components/nav'
 import Table from '../components/table'
 import { SwitchButton } from '../components/button'
 import {getSupplyChains} from '../ethereum/supplyChainFactory'
+import ExternalQCQA from './ExternalQCQA'
+import InternalQCQA from './InternalQCQA'
+import Approved from './Approved'
+import Purchase from './Purchase'
+import Supply from './Supply'
+
 const MainContainer = styled.div`
     display:grid;
     margin:auto;
@@ -56,6 +63,24 @@ const Main = () => {
         case "chainInfo":
             pageNode = <ShowInfo info={selectInfo}/>
             break;
+        case "developed":
+            pageNode = <DevelopedMedicine setCreatedFlag={setCreatedFlag} supplyChainAddress={selectInfo.address}/>
+            break;
+        case "internalQCQA":
+            pageNode = <InternalQCQA  setCreatedFlag={setCreatedFlag} supplyChainAddress={selectInfo.address}/>
+                        break;
+        case "externalQCQA":
+            pageNode = <ExternalQCQA setCreatedFlag={setCreatedFlag} supplyChainAddress={selectInfo.address}/>
+                        break;
+        case "approved":
+            pageNode = <Approved setCreatedFlag={setCreatedFlag} supplyChainAddress={selectInfo.address}/>
+                        break;
+        case "purchase":
+            pageNode = <Purchase setCreatedFlag={setCreatedFlag} supplyChainAddress={selectInfo.address}/>
+                        break;
+        case "supply":
+            pageNode = <Supply setCreatedFlag={setCreatedFlag} supplyChainAddress={selectInfo.address}/>
+                        break;
         default:
             pageNode = null
     }
@@ -67,7 +92,7 @@ const Main = () => {
                 <Nav openCreate = {() => setPage("createChain")}></Nav>
                 <Title>Medicine Supply Management</Title>
                 <SwitchButton />
-                <Table openInfo = {(info) => {setSelectInfo(info);setPage("chainInfo");}}  supplyChains={supplyChains}/>
+                <Table setPage ={(page) =>setPage(page)} setSelectInfo ={(info) =>{setSelectInfo(info)}} supplyChains={supplyChains}/>
             </MainContainer>
         </>
     );

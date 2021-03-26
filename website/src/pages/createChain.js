@@ -1,26 +1,9 @@
 import React from 'react';
-import  {H1 ,Input,Button,PopUpContianer } from '../globalStyles'
-import styled from 'styled-components'
+import  {H1, PopUpContianer,FormInput,FormButton,Form } from '../globalStyles'
 import useForm from '../hooks/useForm'
 import {createSupplyChain} from '../ethereum/supplyChainFactory'
 
-const FormInput = styled(Input)`
-  width: 600px;
-  height: 50px;
-`
-const FormButton = styled(Button)`
- font-size:30px;
- width: 600px;
- height: 50px;
- background-color:${props=>props.theme.color.btn_blue};
-`
 
-const Form = styled.form`
-  display:flex;
-  flex-direction:column;
-  justify-content:space-around;
-  height:100%;
-`
 const CreateChain = ({setCreatedFlag}) => {
     const [pair, changeValue]=useForm({date:"",
       healthDepartmentAddress:"",

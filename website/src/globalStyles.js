@@ -43,6 +43,7 @@ const theme = {
 }
 
 const Button = styled.button`
+    min-height:50px;
     word-wrap: break-word;
     max-width:${props => props.max_width};
     outline:none;
@@ -103,6 +104,7 @@ const Input = styled.input`
     }
 `
 const Field = styled.div`
+word-wrap:none;
 width:${props => props.width};
 overflow:scroll;
 background-color:${theme.color.bar_grey};
@@ -137,5 +139,34 @@ const PopUpContianer = styled.div`
   justify-content:center;
   align-items:center;
   padding:${props=>props.theme.margin.large} 0;
+  overflow:scroll;
 `
-export { GlobalStyles,PopUpContianer,Field, theme, H1, L1, L2, L3, Button, Title, Blocker ,Input};
+
+const FormInput = styled(Input)`
+  width: 600px;
+  height: 50px;
+`
+const FormButton = styled(Button)`
+ font-size:30px;
+ width: 600px;
+ height: 50px;
+ background-color:${props=>props.bgColor?props.bgColor:props.theme.color.btn_blue};
+`
+
+const Form = styled.form`
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  height:100%;
+`
+
+const InfoContainer = styled.div`
+    overflow:scroll;
+    height:300px;
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+`
+
+export { InfoContainer,FormInput,FormButton,Form,GlobalStyles,PopUpContianer,Field, theme, H1, L1, L2, L3, Button, Title, Blocker ,Input};

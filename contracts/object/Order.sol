@@ -10,16 +10,16 @@ contract Order is Medicine, Ownable{
         bool supplied;
         uint256 orderTime;
         uint256 supplyTime;
+        string pharmacyPhysicalAddress;
     }
-    uint256 public OrderId=0;
+    uint256 public OrderAmount=0;
     mapping(uint256 => _Order) public Orders;
-    function getOrderId() public view returns(uint256){
-        return OrderId;
-    }
-    function addOrder(address _pharmacyAddress,uint256 _amount,uint256 _orderTime) public{
-        Orders[OrderId] = _Order(
-            OrderId,_pharmacyAddress,_amount,false,_orderTime,0
+    function addOrder(address _pharmacyAddress,uint256 _amount,uint256 _orderTime, string memory _pharmacyPhysicalAddress) public returns(uint256){
+        Orders[OrderAmount] = _Order(
+            OrderAmount,_pharmacyAddress,_amount,false,_orderTime,0,_pharmacyPhysicalAddress
         );
-        OrderId++;
+        OrderAmount++;
+        return OrderAmount - 1;
     }
+    
 }

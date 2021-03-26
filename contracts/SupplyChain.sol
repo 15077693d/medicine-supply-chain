@@ -12,5 +12,4 @@ contract SupplyChain is  AdminRole, ConsumerRole, DistributorRole, RetailerRole{
         chainStartTime=_chainStartTime;
         chainEndTime=_chainEndTime;
     }
-
 }
