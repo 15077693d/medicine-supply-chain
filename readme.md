@@ -1,17 +1,17 @@
-### UML
-## Activity Diagram
+## UML
+### Activity Diagram
 ![alt text](https://github.com/15077693d/medicine-supply-chain/blob/master/UML%20documents/Activity%20Diagram%20for%20Medicines%20Supply%20Chain.png?raw=true)
 
-## Class Diagram
+### Class Diagram
 ![alt text](https://github.com/15077693d/medicine-supply-chain/blob/master/UML%20documents/Class%20diagram.png?raw=true)
 
-## Sequence Diagram
+### Sequence Diagram
 ![alt text](https://github.com/15077693d/medicine-supply-chain/blob/master/UML%20documents/Sequence%20Diagram%20for%20Medicines%20Supply%20Chain.png?raw=true)
 
-## State Diagram
+### State Diagram
 ![alt text](https://github.com/15077693d/medicine-supply-chain/blob/master/UML%20documents/State%20Diagram%20for%20Medicines%20Supply%20Chain.png?raw=true)
 
-### Website
+## Website
 ![alt text](https://github.com/15077693d/medicine-supply-chain/blob/master/readme-image/medicine.png?raw=true)
 
 ### Dependency
